@@ -67,3 +67,46 @@ To add and push changes to the repository:
    ```bash
    git push
    ```
+
+## Branch Commands
+
+To manage branches, use the following commands:
+
+1. **Check the current branch:**
+
+   ```bash
+   git branch
+   ```
+
+2. **Rename the current branch to `main`:**
+
+   ```bash
+   git branch -M main
+   ```
+
+3. **Navigate to a different branch:**
+
+   ```bash
+   git checkout <branch name>
+   ```
+
+4. **Create a new branch and switch to it:**
+
+   ```bash
+   git checkout -b <new branch name>
+   ```
+
+   Example:
+
+   ```bash
+   git checkout -b feature1
+   git branch
+   git checkout main
+   git checkout -b feature2
+   git branch -d feature2   # Note: You cannot delete the branch if you are currently on it.
+   ```
+
+5. **Delete a branch:**
+   ```bash
+   git branch -d <branch name>
+   ```
