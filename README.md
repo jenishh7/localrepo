@@ -110,3 +110,29 @@ To manage branches, use the following commands:
    ```bash
    git branch -d <branch name>
    ```
+
+## Merging Code
+
+To merge code from one branch into another:
+
+### Way 1: Command Line
+
+1. **Compare branches, commits, files, etc.:**
+
+   ```bash
+   git diff <branch name>
+   ```
+
+2. **Merge the branches:**
+   ```bash
+   git merge <branch name>
+   ```
+
+### Way 2: Pull Request (PR)
+
+1. **Create a Pull Request (PR) on GitHub:**
+   - Go to your repository on GitHub.
+   - Navigate to the "Pull Requests" tab.
+   - Click "New Pull Request."
+   - Select the branch you want to merge into (base) and the branch you want to merge from (compare).
+   - Review the changes and submit the Pull Request to let others review and discuss your changes before merging.
